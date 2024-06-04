@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Banner from "./Banner";
 import HomeCards from "./HomeCards";
 import { useLoaderData } from "react-router-dom";
+import Works from "./Works";
 const Home = () => {
    const cards = useLoaderData();
 
@@ -12,6 +13,7 @@ const Home = () => {
          </Helmet>
          <Banner></Banner>
          <HomeCards cards={cards}></HomeCards>
+         <Works Works={cards}></Works>
       </div>
    );
 };
