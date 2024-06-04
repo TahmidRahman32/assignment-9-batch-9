@@ -1,0 +1,74 @@
+[
+   {
+      "id": 1,
+      "name": "Downtown Office Plaza",
+      "image": "https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/blog-compact-img1.jpg",
+      "title": "Prime Office Space in Downtown",
+      "description": "A modern office space located in the heart of downtown, ideal for businesses.",
+      "price": "$5,000,000",
+      "status": "sale",
+      "area": "8000 sq ft",
+      "location": "Downtown, Metropolis City",
+      "facilities": ["Conference Rooms", "High-Speed Internet", "Cafeteria"]
+   },
+   {
+      "id": 2,
+      "name": "Tech Park Hub",
+      "image": "https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/white-stylish-loft-02-460x300.jpg",
+      "title": "Innovative Space in Tech Park",
+      "description": "An innovative office space situated in a tech park, equipped with the latest amenities.",
+      "price": "$10,000/month",
+      "status": "rent",
+      "area": "6000 sq ft",
+      "location": "Tech Park, Silicon Valley",
+      "facilities": ["Meeting Rooms", "Parking", "24/7 Security"]
+   },
+   {
+      "id": 3,
+      "name": "Commercial Complex",
+      "image": "https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/list-half-map-image-1-460x300.jpg",
+      "title": "Spacious Commercial Complex",
+      "description": "A spacious commercial complex perfect for retail stores and offices.",
+      "price": "$2,500,000",
+      "status": "sale",
+      "area": "10000 sq ft",
+      "location": "Commercial Area, Business City",
+      "facilities": ["Parking", "Elevators", "Food Court"]
+   },
+   {
+      "id": 4,
+      "name": "Corporate Tower",
+      "image": "https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/property-gallery-img-1-new-460x300.jpg",
+      "title": "Modern Corporate Tower",
+      "description": "A state-of-the-art corporate tower offering premium office spaces.",
+      "price": "$15,000/month",
+      "status": "rent",
+      "area": "9000 sq ft",
+      "location": "Financial District, Capital City",
+      "facilities": ["Gym", "Cafeteria", "High-Speed Internet"]
+   },
+   {
+      "id": 5,
+      "name": "Business Center",
+      "image": "https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/list-half-map-image-4-450x300.jpg",
+      "title": "Fully Equipped Business Center",
+      "description": "A fully equipped business center ready for immediate occupancy.",
+      "price": "$3,800,000",
+      "status": "sale",
+      "area": "7000 sq ft",
+      "location": "Business Hub, Market City",
+      "facilities": ["Conference Rooms", "Parking", "24/7 Security"]
+   },
+   {
+      "id": 6,
+      "name": "Industrial Warehouse",
+      "image": "https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/modern-family-house-01-450x300.jpg",
+      "title": "Large Industrial Warehouse",
+      "description": "A large industrial warehouse suitable for manufacturing and storage.",
+      "price": "$8,000/month",
+      "status": "rent",
+      "area": "15000 sq ft",
+      "location": "Industrial Zone, Factory Town",
+      "facilities": ["Loading Dock", "Security System", "Office Space"]
+   }
+]
