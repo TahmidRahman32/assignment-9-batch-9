@@ -1,11 +1,30 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { FaEyeSlash } from "react-icons/fa6";
 import { IoEyeSharp } from "react-icons/io5";
+import { AuthContext } from "../Route/AuthProvider";
 
 const SignUp = () => {
    const [showPass, setShowPass] = useState(false);
+   const { createUsers } = useContext(AuthContext);
+   const handleRegisterPage = (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const username = form.username.value;
+      const email = form.email.value;
+      const password = form.password.value;
+      const photo = form.photo.value;
+      console.log(username, email, password, photo);
+
+      createUsers(email, password)
+         .then((result) => {
+            console.log(result.user);
+         })
+         .catch((error) => {
+            console.log(error);
+         });
+   };
    return (
       <div className="bg-slate-300 p-10 rounded-t-xl">
          <Helmet>
@@ -13,7 +32,7 @@ const SignUp = () => {
          </Helmet>
          <div className="w-full max-w-xl mx-auto my-20 px-12 py-12 items-center space-y-3 rounded-xl dark:text-gray-800 bg-gray-200 shadow-lg">
             <h1 className="text-3xl font-bold font-fStyle text-center">Register Now!!</h1>
-            <form noValidate="" action="" className="space-y-6">
+            <form noValidate="" action="" className="space-y-6" onSubmit={handleRegisterPage}>
                <div className="space-y-1 text-sm">
                   <label htmlFor="username" className="block dark:text-gray-600">
                      Username
@@ -32,7 +51,7 @@ const SignUp = () => {
                   </label>
                   <input
                      type="url"
-                     name="email"
+                     name="photo"
                      id="username"
                      placeholder="Photo Url"
                      className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600 focus:no-underline transition border-2 hover:scale-105  hover:border-red-300 border-opacity-30"
