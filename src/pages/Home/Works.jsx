@@ -17,7 +17,7 @@ const Works = ({ Works }) => {
             </h2>
          </div>
          <div className="flex gap-8 justify-around">
-            <div className="space-y-2 my-8 bg-gray-50 px-5 py-4 rounded-lg ">
+            <div className="space-y-2 my-8 bg-gray-50 px-5 py-4 rounded-lg " data-aos="fade-right">
                <AiOutlineHome size={50} />
                <h3 className="text-2xl font-fStyle font-bold">Find real estate</h3>
                <p className="text-sm">Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco quod suavitate vix.</p>

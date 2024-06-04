@@ -8,11 +8,17 @@ const Nav = () => {
    const navLinks = (
       <>
          <div className=" flex  gap-4 lg:items-center">
-            <NavLink to={"/"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl  " : "font-bold ")}>
+            <NavLink to={"/"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl  " : "font-bold md:text-xl")}>
                Home
             </NavLink>
             <NavLink to={"/about"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl" : "font-bold md:text-xl")}>
                about
+            </NavLink>
+            <NavLink to={"/logIn"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl" : "font-bold md:text-xl")}>
+               LogIn
+            </NavLink>
+            <NavLink to={"/signUp"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl" : "font-bold md:text-xl")}>
+               SignUp
             </NavLink>
          </div>
       </>
