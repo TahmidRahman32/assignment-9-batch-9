@@ -36,7 +36,7 @@ const Card = ({ card }) => {
                <p className="font-bold">Area: {area}</p>
             </div>
             <div>
-               <Link to={`cardDetails/${id}`}>
+               <Link to={`details/${id}`}>
                   <div href="#_" className="relative inline-flex items-center justify-center p-4 px-3 py-1 overflow-hidden font-medium text-black transition duration-300 ease-out border-2 border-red-300 rounded-full shadow-md group">
                      <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-red-300 group-hover:translate-x-0 ease">
                         <FaRegArrowAltCircleRight size={20} />

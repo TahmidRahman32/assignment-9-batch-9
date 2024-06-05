@@ -5,6 +5,8 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import About from "../pages/About/About";
 import Login from "../Auth/Login";
 import SignUp from "../Auth/SignUp";
+import PrivateRoute from "./PrivateRoute";
+import Details from "../pages/Home/Details";
 
 
 const router = createBrowserRouter([
@@ -28,8 +30,13 @@ const router = createBrowserRouter([
          },
          {
             path: '/about',
-            element: <About/>,
+            element: <PrivateRoute><About/></PrivateRoute> ,
          },
+         {
+            path: '/details/:id',
+            element: <PrivateRoute><Details></Details></PrivateRoute>,
+            loader: () => fetch('fakeData.json')
+         }
       ]
    },
 ]);
