@@ -3,11 +3,12 @@ import ReactDOM from "react-dom/client";
 import { Toaster } from "react-hot-toast";
 import "./index.css";
 import "animate.css";
-
+import { register } from "swiper/element/bundle";
 import { RouterProvider } from "react-router-dom";
 import router from "./Route/Router";
 import { HelmetProvider } from "react-helmet-async";
 import AuthProvider from "./Route/AuthProvider";
+register();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
    <div className="max-w-7xl mx-auto">

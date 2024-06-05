@@ -27,6 +27,10 @@ const SignUp = () => {
          toast.error("please add one uppercase");
          return;
       }
+       else if (!/[a-z]/.test(password)) {
+         toast.error("please add one lowercase");
+         return;
+      }
 
       createUsers(email, password)
          .then((result) => {

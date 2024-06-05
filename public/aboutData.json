@@ -1,0 +1,74 @@
+[
+   {
+      "id": 1,
+      "img": "https://i.ibb.co/WgQCnsQ/istockphoto-1497142422-612x612.jpg",
+      "name": "The Mysterious Island",
+      "description": "An adventurous journey to a hidden island full of secrets. Five prisoners of war escape their captors during the American Civil War by hijacking a hot air balloon. They crash on an uncharted island in the South Pacific, where they encounter mysterious occurrences and a diverse landscape. The castaways use their resourcefulness to survive and thrive, uncovering the island's secrets along the way. Their ingenuity transforms the island into a livable place, and they face various challenges, including natural disasters and encounters with pirates. Throughout their journey, the group remains hopeful and determined to uncover the island's ultimate mystery. This classic tale by Jules Verne combines adventure, science fiction, and human resilience, captivating readers with its imaginative storytelling and vivid descriptions of the island's wonders.",
+      "reading": "Medium",
+      "author": "Jules Verne",
+      "author_profession": "Novelist"
+   },
+   {
+      "id": 2,
+      "img": "https://i.ibb.co/MsV2D2S/istockphoto-1406197730-612x612.jpg",
+      "name": "Pride and Prejudice",
+      "description": "A classic novel exploring themes of love and societal expectations. Set in early 19th century England, the story follows the lives of the Bennet family, particularly the intelligent and spirited Elizabeth Bennet. As she navigates the intricacies of class and relationships, Elizabeth encounters the wealthy and seemingly aloof Mr. Darcy. Their initial misunderstandings and prejudices set the stage for a complex romance. Through witty dialogue and keen observations, Jane Austen critiques the societal norms and expectations of her time, highlighting issues of marriage, morality, and individuality. Elizabeth's journey towards self-awareness and her evolving perception of Darcy reveal the depth of Austen's characters. The novel's enduring appeal lies in its rich character development, the interplay of social commentary, and the ultimate triumph of love and mutual respect. 'Pride and Prejudice' remains a beloved literary masterpiece, celebrated for its timeless themes and elegant prose.",
+      "reading": "Medium",
+      "author": "Jane Austen",
+      "author_profession": "Novelist"
+   },
+   {
+      "id": 3,
+      "img": "https://i.ibb.co/4SqLg0X/istockphoto-1476170969-612x612.jpg",
+      "name": "To Kill a Mockingbird",
+      "description": "A profound novel tackling racial injustice in the American South. Set in the 1930s, the story is narrated by Scout Finch, a young girl growing up in Maycomb, Alabama. Her father, Atticus Finch, is a lawyer appointed to defend Tom Robinson, a black man falsely accused of raping a white woman. Through Scout's innocent perspective, the novel explores themes of racism, morality, and the loss of innocence. Atticus's unwavering commitment to justice and his moral integrity serve as a guiding force for Scout and her brother, Jem. The novel delves into the complexities of human behavior and the societal prejudices that permeate the town. Harper Lee's powerful narrative and empathetic characters shed light on the deeply entrenched racism of the era. 'To Kill a Mockingbird' remains a poignant and timeless work, revered for its poignant depiction of the fight for justice and human dignity.",
+      "reading": "Easy",
+      "author": "Harper Lee",
+      "author_profession": "Novelist"
+   },
+   {
+      "id": 4,
+      "img": "https://i.ibb.co/rtmsKnC/portrait-7676482-1280.webp",
+      "name": "1984",
+      "description": "A dystopian novel exploring the dangers of totalitarianism. Set in a grim future where the world is ruled by three oppressive superstates, the story follows Winston Smith, a low-ranking member of the Party in Oceania. The Party, led by the enigmatic Big Brother, exercises total control over every aspect of life, using surveillance, propaganda, and brutal repression to maintain power. Winston secretly despises the Party and dreams of rebellion. As he begins a forbidden love affair with Julia, he becomes increasingly disillusioned with the regime and seeks to join the resistance. However, the Party's pervasive control makes escape nearly impossible. George Orwell's chilling portrayal of a society stripped of freedom, truth, and individuality serves as a stark warning about the dangers of unchecked government power. '1984' remains a powerful and thought-provoking novel, resonating with readers as a timeless critique of authoritarianism and the loss of personal autonomy.",
+      "reading": "Hard",
+      "author": "George Orwell",
+      "author_profession": "Novelist"
+   },
+   {
+      "id": 5,
+      "img": "https://i.ibb.co/WgQCnsQ/istockphoto-1497142422-612x612.jpg",
+      "name": "The Great Gatsby",
+      "description": "A story of extravagance, love, and the American Dream. Set in the Roaring Twenties, the novel follows the mysterious millionaire Jay Gatsby and his obsessive love for Daisy Buchanan. Narrated by Nick Carraway, Gatsby's neighbor, the story delves into the opulent and hedonistic lifestyle of the wealthy elite. Gatsby's lavish parties and extravagant displays of wealth are driven by his desire to win back Daisy, who is married to the wealthy but unfaithful Tom Buchanan. As Nick becomes entangled in Gatsby's world, he uncovers the emptiness and moral decay beneath the surface glamour. F. Scott Fitzgerald's masterful prose captures the essence of an era defined by excess and disillusionment. 'The Great Gatsby' is a poignant exploration of ambition, love, and the relentless pursuit of the American Dream, revealing the darker side of a seemingly glamorous world. Its timeless themes and complex characters continue to captivate readers.",
+      "reading": "Medium",
+      "author": "F. Scott Fitzgerald",
+      "author_profession": "Novelist"
+   },
+   {
+      "id": 6,
+      "img": "https://i.ibb.co/4SqLg0X/istockphoto-1476170969-612x612.jpg",
+      "name": "Moby Dick",
+      "description": "An epic tale of a man's obsession with a giant whale. The novel follows the journey of Ishmael, a sailor who joins the whaling ship Pequod. The ship's captain, Ahab, is consumed by his desire for revenge against Moby Dick, a giant white whale that previously destroyed his ship and severed his leg. As the Pequod sails across the oceans, the crew encounters various challenges and wonders of the sea. Ahab's monomaniacal pursuit of the whale leads the crew into perilous situations, highlighting themes of obsession, fate, and the human struggle against nature. Herman Melville's rich and symbolic prose delves into philosophical and existential questions, making 'Moby Dick' a profound and complex narrative. The novel's detailed descriptions of whaling and the ocean's vastness add to its epic scope. 'Moby Dick' is a timeless classic, exploring the depths of human ambition and the consequences of relentless pursuit.",
+      "reading": "Hard",
+      "author": "Herman Melville",
+      "author_profession": "Novelist"
+   },
+   {
+      "id": 7,
+      "img": "https://i.ibb.co/MsV2D2S/istockphoto-1406197730-612x612.jpg",
+      "name": "The Odyssey",
+      "description": "The ancient epic of Odysseus's long journey home. Written by Homer, this epic poem chronicles the adventures of Odysseus as he strives to return to Ithaca after the Trojan War. His journey is fraught with peril, encountering mythical creatures, divine interventions, and numerous challenges. From the cunning escape from the Cyclops Polyphemus to resisting the enchantments of Circe and the Sirens, Odysseus's resourcefulness and determination are continually tested. Meanwhile, back in Ithaca, his wife Penelope and son Telemachus fend off suitors vying for her hand, believing Odysseus to be dead. The poem explores themes of heroism, loyalty, and the enduring human spirit. Homer's vivid storytelling and the richness of Greek mythology bring the ancient world to life. 'The Odyssey' remains a foundational work of Western literature, celebrated for its epic scope, complex characters, and profound insights into the human condition and the power of perseverance.",
+      "reading": "Hard",
+      "author": "Homer",
+      "author_profession": "Poet"
+   },
+   {
+      "id": 8,
+      "img": "https://i.ibb.co/BTnwxb3/istockphoto-1388253782-612x612.jpg",
+      "name": "War and Peace",
+      "description": "A comprehensive novel exploring Russian society during the Napoleonic era. Leo Tolstoy's magnum opus intertwines the lives of several aristocratic families as they navigate the tumultuous events of the early 19th century. The novel delves into the personal and political struggles of its characters, set against the backdrop of Napoleon's invasion of Russia. Central figures like Pierre Bezukhov, Andrei Bolkonsky, and Natasha Rostov experience love, loss, and self-discovery amidst the chaos of war. Tolstoy's intricate narrative weaves together detailed historical accounts with intimate portraits of human experience, exploring themes of fate, free will, and the search for meaning. The novel's vast scope and depth provide a rich tapestry of Russian culture and history. 'War and Peace' is a literary masterpiece, renowned for its epic scale, philosophical insights, and profound exploration of the human condition, standing as one of the greatest works of world literature.",
+      "reading": "Very Hard",
+      "author": "Leo Tolstoy",
+      "author_profession": "Novelist"
+   }
+]

@@ -26,7 +26,7 @@ const Banner = () => {
                <div className="bg-gradient-to-r from-[#0A031B78] to-[#2D154633] h-full absolute top-0 w-full rounded-xl">
                   <div className="md:flex justify-center md:items-center pt-14 md:pt-0 h-[550px]">
                      <div className="text-center ">
-                        <h2 className="text-3xl md:text-6xl text-white font-fStyle font-bold animate__animated animate__bounce animate__delay-2s">
+                        <h2 className="text-3xl md:text-6xl text-white font-fStyle font-bold animate__animated animate__bounce animate__fast  animate__backInDown">
                            Buy or rent properties <br /> with no commission
                         </h2>
                         <div className="join mt-8">
@@ -42,7 +42,7 @@ const Banner = () => {
                <div className="bg-gradient-to-r from-[#0A031B78] to-[#2D154633] h-full absolute top-0 w-full rounded-xl">
                   <div className="md:flex justify-center md:items-center pt-14 md:pt-0 h-[550px]">
                      <div className="text-center ">
-                        <h2 className="text-3xl md:text-6xl text-white font-fStyle font-bold animate__animated animate__bounce animate__delay-2s">
+                        <h2 className="text-3xl md:text-6xl text-white font-fStyle font-bold animate__animated animate__bounce animate__fast  animate__backInDown">
                            Buy or rent properties <br /> with no commission
                         </h2>
                         <div className="join mt-8">
@@ -58,7 +58,7 @@ const Banner = () => {
                <div className="bg-gradient-to-r from-[#0A031B78] to-[#2D154633] h-full absolute top-0 w-full rounded-xl">
                   <div className="md:flex justify-center md:items-center pt-14 md:pt-0 h-[550px]">
                      <div className="text-center ">
-                        <h2 className="text-3xl md:text-6xl text-white font-fStyle font-bold animate__animated animate__bounce animate__delay-2s">
+                        <h2 className="text-3xl md:text-6xl text-white font-fStyle font-bold animate__animated animate__bounce animate__fast  animate__backInDown">
                            Buy or rent properties <br /> with no commission
                         </h2>
                         <div className="join mt-8">
