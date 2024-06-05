@@ -3,10 +3,10 @@ import { IoLocationOutline } from "react-icons/io5";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Card = ({ card }) => {
-   console.log(card);
+   // console.log(card);
    const { image, id, title, area, description, price, status, location } = card;
    return (
-      <div className="max-w-lg p-4 shadow-xl rounded-xl focus:no-underline transition border-2 hover:scale-105  hover:border-red-300 border-opacity-30 " >
+      <div className="max-w-lg p-4 shadow-xl rounded-xl focus:no-underline transition border-2 hover:scale-105  hover:border-red-300 border-opacity-30">
          <div className="space-y-4">
             <div className="space-y-2">
                <img src={image} alt="" className="relative block object-cover object-center w-full rounded-md h-72 bg-gray-500" />

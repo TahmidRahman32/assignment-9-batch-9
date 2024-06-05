@@ -1,6 +1,6 @@
 // import Swiper core and required modules
 import { Navigation } from "swiper/modules";
-
+import "animate.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -26,12 +26,12 @@ const Banner = () => {
                <div className="bg-gradient-to-r from-[#0A031B78] to-[#2D154633] h-full absolute top-0 w-full rounded-xl">
                   <div className="md:flex justify-center md:items-center pt-14 md:pt-0 h-[550px]">
                      <div className="text-center ">
-                        <h2 className="text-3xl md:text-6xl text-white font-fStyle font-bold">
+                        <h2 className="text-3xl md:text-6xl text-white font-fStyle font-bold animate__animated animate__bounce animate__delay-2s">
                            Buy or rent properties <br /> with no commission
                         </h2>
                         <div className="join mt-8">
                            <input className="input input-bordered join-item" placeholder="Search" />
-                           <button className="join-item rounded-r-full btn border-red-300 bg-red-300 text-gray-600 hover:text-gray-100">Search</button>
+                           <button className="join-item rounded-r-full btn hover:text-black border-red-300 bg-red-300 text-gray-800 ">Search</button>
                         </div>
                      </div>
                   </div>
@@ -42,12 +42,12 @@ const Banner = () => {
                <div className="bg-gradient-to-r from-[#0A031B78] to-[#2D154633] h-full absolute top-0 w-full rounded-xl">
                   <div className="md:flex justify-center md:items-center pt-14 md:pt-0 h-[550px]">
                      <div className="text-center ">
-                        <h2 className="text-3xl md:text-6xl text-white font-fStyle font-bold">
+                        <h2 className="text-3xl md:text-6xl text-white font-fStyle font-bold animate__animated animate__bounce animate__delay-2s">
                            Buy or rent properties <br /> with no commission
                         </h2>
                         <div className="join mt-8">
                            <input className="input input-bordered join-item" placeholder="Search" />
-                           <button className="join-item rounded-r-full btn  btn-success">Search</button>
+                           <button className="join-item rounded-r-full btn hover:text-black border-red-300 bg-red-300 text-gray-800 ">Search</button>
                         </div>
                      </div>
                   </div>
@@ -58,12 +58,12 @@ const Banner = () => {
                <div className="bg-gradient-to-r from-[#0A031B78] to-[#2D154633] h-full absolute top-0 w-full rounded-xl">
                   <div className="md:flex justify-center md:items-center pt-14 md:pt-0 h-[550px]">
                      <div className="text-center ">
-                        <h2 className="text-3xl md:text-6xl text-white font-fStyle font-bold">
+                        <h2 className="text-3xl md:text-6xl text-white font-fStyle font-bold animate__animated animate__bounce animate__delay-2s">
                            Buy or rent properties <br /> with no commission
                         </h2>
                         <div className="join mt-8">
                            <input className="input input-bordered join-item" placeholder="Search" />
-                           <button className="join-item rounded-r-full btn  btn-success">Search</button>
+                           <button className="join-item rounded-r-full btn hover:text-black border-red-300 bg-red-300 text-gray-800 ">Search</button>
                         </div>
                      </div>
                   </div>

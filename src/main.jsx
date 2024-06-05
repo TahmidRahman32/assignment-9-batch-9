@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
+import { Toaster } from "react-hot-toast";
 import "./index.css";
+import "animate.css";
 
 import { RouterProvider } from "react-router-dom";
 import router from "./Route/Router";
@@ -17,5 +18,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             </React.StrictMode>
          </AuthProvider>
       </HelmetProvider>
+      <Toaster />
    </div>
 );
