@@ -4,11 +4,11 @@ import { Navigate, useLocation } from "react-router-dom";
 import { HashLoader } from "react-spinners";
 
 const PrivateRoute = ({ children }) => {
-   const { user,loading } = useContext(AuthContext);
+   const { user, loading } = useContext(AuthContext);
 
    const location = useLocation();
-   console.log(location.pathname);
-   if(loading){
+
+   if (loading) {
       return (
          <div className="flex justify-center items-center min-h-[calc(100vh-360px)]">
             <HashLoader color="#E56B6B" size={80} />
@@ -19,7 +19,7 @@ const PrivateRoute = ({ children }) => {
    if (user) {
       return children;
    }
-   return <Navigate state={location.pathname} to={"/logIn"} ></Navigate>;
+   return <Navigate state={location.pathname} to={"/logIn"}></Navigate>;
 };
 
 export default PrivateRoute;

@@ -2,13 +2,26 @@ import { useContext } from "react";
 import { AuthContext } from "../../Route/AuthProvider";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-
+import { updateProfile } from "firebase/auth";
+import toast from "react-hot-toast";
 
 const Profile = () => {
-   const { user} = useContext(AuthContext);
-   console.log(user);
-     
-   
+   const { user } = useContext(AuthContext);
+
+   const updateProfileBtn = (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const username = form.username.value;
+      const photo = form.photo.value;
+      updateProfile(user, {
+         displayName: username,
+         photoURL: photo,
+      })
+         .then(() => {
+            toast.success("Your Profile Updated!!");
+         })
+         .catch(() => {});
+   };
 
    return (
       <div className="relative mt-8">
@@ -21,7 +34,7 @@ const Profile = () => {
                <div>
                   <h2 className="text-lg font-semibold">{user?.displayName}</h2>
                   <span className="flex items-center space-x-1">
-                     <Link to={"/signUp"} rel="noopener noreferrer" href="#" className="text-xs hover:underline text-gray-400">
+                     <Link to={"/signUp"} rel="noopener noreferrer" href="#" className="text-xs hover:underline text-gray-400 font-fStyle">
                         Update profile
                      </Link>
                   </span>
@@ -95,7 +108,44 @@ const Profile = () => {
                </ul>
             </div>
          </div>
-         <div className=" md:h-[435px] md:w-[1020px] sm:space-x-6 bg-gray-900 text-gray-100 md:absolute md:left-64 md:top-1 md:flex  px-16 py-5 rounded-xl justify-between my-8 md:my-0">
+         <section className="p-6  md:h-[435px] md:w-[1020px] sm:space-x-6 bg-gray-900 text-gray-100 md:absolute md:left-64 md:top-1 md:flex  px-16 py-5 rounded-xl justify-between my-8 md:my-0">
+            <form onSubmit={updateProfileBtn} className="container flex flex-col mx-auto space-y-12">
+               <fieldset className="grid grid-cols-3 gap-6 p-6 rounded-md shadow-sm bg-gray-900">
+                  <div className="space-y-2 col-span-full lg:col-span-1">
+                     <p className="font-medium text-3xl font-fStyle">Profile Update</p>
+                  </div>
+                  <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
+                     <div className="col-span-full sm:col-span-3">
+                        <label htmlFor="username" className="text-sm">
+                           Username
+                        </label>
+                        <input name="username" type="text" placeholder="Username" className="w-full py-2 px-2 rounded-md focus:ring focus:ring-opacity-75 text-gray-900 focus:ring-violet-400 border-gray-700" />
+                     </div>
+                     <div className="col-span-full sm:col-span-3">
+                        <label htmlFor="website" className="text-sm">
+                           Photo Url
+                        </label>
+                        <input name="photo" type="text" placeholder="Photo url" className="w-full py-2 px-2 rounded-md focus:ring focus:ring-opacity-75 text-gray-900 focus:ring-violet-400 border-gray-700" />
+                     </div>
+                     <div className="col-span-full">
+                        <label htmlFor="bio" className="text-sm">
+                           Bio
+                        </label>
+                        <textarea id="bio" placeholder="Optional" className="w-full rounded-md focus:ring focus:ring-opacity-75 py-2 px-2 text-gray-900 focus:ring-violet-400 border-gray-700"></textarea>
+                     </div>
+                     <div className="col-span-full">
+                        <div className="flex items-center space-x-2">
+                           <button className="text-red hover:before:bg-redborder-red-500 relative h-[50px] w-40 text-xl font-bold rounded-lg overflow-hidden border border-red-300 bg-white px-3 text-black shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-red-300 before:transition-all before:duration-500 hover:text-white hover:shadow-red-400 hover:before:left-0 hover:before:w-full">
+                              <span className="relative z-10">Update</span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </fieldset>
+            </form>
+         </section>
+
+         {/* <div className=" md:h-[435px] md:w-[1020px] sm:space-x-6 bg-gray-900 text-gray-100 md:absolute md:left-64 md:top-1 md:flex  px-16 py-5 rounded-xl justify-between my-8 md:my-0">
             <div>
                <div className="flex-shrink-0 w-full mb-6 h-44 sm:h-32 sm:w-32 sm:mb-0 text-center">
                   <img src={user?.photoURL} alt="" className="object-cover object-center w-full h-full rounded-full bg-gray-500" />
@@ -130,7 +180,7 @@ const Profile = () => {
             <div>
                <h2>cumming soon.....</h2>
             </div>
-         </div>
+         </div> */}
       </div>
    );
 };
