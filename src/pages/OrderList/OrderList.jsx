@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import { getOrder } from "../../Store/LocalStore";
+import { getOrder, orderDelete } from "../../Store/LocalStore";
 import OrderCard from "./OrderCard";
 
 const OrderList = () => {
@@ -13,10 +13,14 @@ const OrderList = () => {
          setOrder(orders);
       }
    }, [orderData]);
+
+    const handleListDelete = (id) => {
+       orderDelete(id);
+    };
    return (
       <div>
          {Orders.map((order) => (
-            <OrderCard key={order.id} order={order}></OrderCard>
+            <OrderCard key={order.id} order={order} handleListDelete={handleListDelete}></OrderCard>
          ))}
       </div>
    );

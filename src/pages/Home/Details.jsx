@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { useContext } from "react";
 import { AuthContext } from "../../Route/AuthProvider";
 import { Helmet } from "react-helmet-async";
-import toast from "react-hot-toast";
+
 import { setOrder } from "../../Store/LocalStore";
 const Details = () => {
    const detailsData = useLoaderData();
@@ -15,11 +15,11 @@ const Details = () => {
    const detailId = detailsData.find((detail) => detail.id === stringId);
    const { name, image, area, description, location, price, status, title, facilities } = detailId;
 
-   const handleOrderBtn = () =>{
+   const handleOrderBtn = () => {
       setOrder(stringId);
-      console.log('up', stringId);
-      toast.success('Order is success')
-   }
+
+      
+   };
    return (
       <div>
          <Helmet>

@@ -7,7 +7,6 @@ import { FaRegStarHalfStroke } from "react-icons/fa6";
 import Marquee from "react-fast-marquee";
 const About = () => {
    const authorData = useLoaderData();
-   console.log(authorData[0].description);
 
    return (
       <div>
