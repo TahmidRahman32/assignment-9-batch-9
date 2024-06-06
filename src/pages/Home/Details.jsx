@@ -42,6 +42,10 @@ const Details = () => {
                   </span>{" "}
                   {location}
                </p>
+
+               <button className="relative h-[50px] w-56 overflow-hidden border border-red-400 bg-red-100 text-red-600 text-xl font-bold font-fStyle shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-full before:w-0 before:duration-500 after:absolute after:right-0 after:top-0 after:h-full after:w-0 after:duration-500 hover:text-white hover:shadow-red-400 hover:before:w-2/4 hover:before:bg-red-400 hover:after:w-2/4 hover:after:bg-red-400">
+                  <span className="relative z-10">Order Now</span>
+               </button>
             </div>
 
             <div className="pt-3 border-t border-gray-700 lg:flex lg:justify-around ">
@@ -59,7 +63,7 @@ const Details = () => {
                      </p>
                   </div>
                </div>
-               
+
                <div className="flex flex-col">
                   <h2 className="text-2xl font-bold font-fStyle">Flat Details</h2>
                   <hr />

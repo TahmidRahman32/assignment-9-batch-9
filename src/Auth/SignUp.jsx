@@ -38,8 +38,10 @@ const SignUp = () => {
             console.log(result.user);
             setRegisterMassage('User create a successfully');
             updateProfile(result.user, {
-               displayName:
-            });
+               displayName: username,
+               photoURL: photo,
+            })
+            .then(()=>{console.log('name is done');}).catch(()=>{})
          })
          .catch((error) => {
             setRegisterError(error.code)
