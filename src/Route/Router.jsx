@@ -8,6 +8,7 @@ import SignUp from "../Auth/SignUp";
 import PrivateRoute from "./PrivateRoute";
 import Details from "../pages/Home/Details";
 import Profile from "../pages/Profile/Profile";
+import OrderList from "../pages/OrderList/OrderList";
 
 
 const router = createBrowserRouter([
@@ -41,6 +42,11 @@ const router = createBrowserRouter([
          {
             path: '/details/:id',
             element: <PrivateRoute><Details></Details></PrivateRoute>,
+            loader: () => fetch('fakeData.json')
+         },
+         {
+            path: '/order',
+            element: <PrivateRoute><OrderList></OrderList></PrivateRoute>,
             loader: () => fetch('fakeData.json')
          }
       ]

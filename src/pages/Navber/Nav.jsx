@@ -44,6 +44,11 @@ const Nav = () => {
             </NavLink>
 
             {user && (
+               <NavLink to={"/order"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl" : "font-bold md:text-xl")}>
+                  OrderList
+               </NavLink>
+            )}
+            {user && (
                <NavLink to={"/profile"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl" : "font-bold md:text-xl")}>
                   Profile
                </NavLink>

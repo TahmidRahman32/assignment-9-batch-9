@@ -5,14 +5,21 @@ import { MdEmail } from "react-icons/md";
 import { useContext } from "react";
 import { AuthContext } from "../../Route/AuthProvider";
 import { Helmet } from "react-helmet-async";
+import toast from "react-hot-toast";
+import { setOrder } from "../../Store/LocalStore";
 const Details = () => {
    const detailsData = useLoaderData();
-   const {user} = useContext(AuthContext)
+   const { user } = useContext(AuthContext);
    const { id } = useParams();
    const stringId = parseInt(id);
    const detailId = detailsData.find((detail) => detail.id === stringId);
-   console.log(stringId, detailId);
    const { name, image, area, description, location, price, status, title, facilities } = detailId;
+
+   const handleOrderBtn = () =>{
+      setOrder(stringId);
+      console.log('up', stringId);
+      toast.success('Order is success')
+   }
    return (
       <div>
          <Helmet>
@@ -43,7 +50,10 @@ const Details = () => {
                   {location}
                </p>
 
-               <button className="relative h-[50px] w-56 overflow-hidden border border-red-400 bg-red-100 text-red-600 text-xl font-bold font-fStyle shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-full before:w-0 before:duration-500 after:absolute after:right-0 after:top-0 after:h-full after:w-0 after:duration-500 hover:text-white hover:shadow-red-400 hover:before:w-2/4 hover:before:bg-red-400 hover:after:w-2/4 hover:after:bg-red-400">
+               <button
+                  onClick={handleOrderBtn}
+                  className="relative h-[50px] w-56 overflow-hidden border border-red-400 bg-red-100 text-red-600 text-xl font-bold font-fStyle shadow-2xl transition-all before:absolute before:left-0 before:top-0 before:h-full before:w-0 before:duration-500 after:absolute after:right-0 after:top-0 after:h-full after:w-0 after:duration-500 hover:text-white hover:shadow-red-400 hover:before:w-2/4 hover:before:bg-red-400 hover:after:w-2/4 hover:after:bg-red-400"
+               >
                   <span className="relative z-10">Order Now</span>
                </button>
             </div>
