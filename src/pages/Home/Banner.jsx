@@ -16,6 +16,7 @@ const Banner = () => {
          <Swiper
             // install Swiper modules
             modules={[Navigation]}
+            spaceBetween={50}
             slidesPerView={1}
             navigation
             onSwiper={(swiper) => console.log(swiper)}

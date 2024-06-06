@@ -21,7 +21,7 @@ const About = () => {
                <h1 className="text-4xl font-fStyle font-bold">our real estate agent</h1>
             </div>
             <Marquee pauseOnHover speed={180}>
-               <div className="w-[650px] border px-3 py-2 rounded-lg">
+               <div className="w-[550px] border px-3 py-2 rounded-lg">
                   <div className="flex text-amber-500">
                      <FaStar />
                      <FaStar />
@@ -39,7 +39,7 @@ const About = () => {
                      </div>
                   </div>
                </div>
-               <div className="w-[650px] border px-3 py-2 rounded-lg mx-[550px]">
+               <div className="w-[550px] border px-3 py-2 rounded-lg mx-[550px]">
                   <div className="flex text-amber-500">
                      <FaStar />
                      <FaStar />
@@ -57,7 +57,7 @@ const About = () => {
                      </div>
                   </div>
                </div>
-               <div className="w-[650px] border px-3 py-2 rounded-lg mx-[550px]">
+               <div className="w-[550px] border px-3 py-2 rounded-lg mx-[550px]">
                   <div className="flex text-amber-500">
                      <FaStar />
                      <FaStar />
@@ -75,7 +75,7 @@ const About = () => {
                      </div>
                   </div>
                </div>
-               <div className="w-[650px] border px-3 py-2 rounded-lg mx-[550px]">
+               <div className="w-[550px] border px-3 py-2 rounded-lg mx-[550px]">
                   <div className="flex text-amber-500">
                      <FaStar />
                      <FaStar />
@@ -93,7 +93,7 @@ const About = () => {
                      </div>
                   </div>
                </div>
-               <div className="w-[650px] border px-3 py-2 rounded-lg mx-[550px]">
+               <div className="w-[550px] border px-3 py-2 rounded-lg mx-[550px]">
                   <div className="flex text-amber-500">
                      <FaStar />
                      <FaStar />
@@ -111,7 +111,7 @@ const About = () => {
                      </div>
                   </div>
                </div>
-               <div className="w-[650px] border px-3 py-2 rounded-lg mx-[550px]">
+               <div className="w-[550px] border px-3 py-2 rounded-lg mx-[550px]">
                   <div className="flex text-amber-500">
                      <FaStar />
                      <FaStar />

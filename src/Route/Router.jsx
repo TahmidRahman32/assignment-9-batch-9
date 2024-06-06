@@ -7,6 +7,7 @@ import Login from "../Auth/Login";
 import SignUp from "../Auth/SignUp";
 import PrivateRoute from "./PrivateRoute";
 import Details from "../pages/Home/Details";
+import Profile from "../pages/Profile/Profile";
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
          {
             path: '/signUp',
             element: <SignUp/>,
+         },
+         {
+            path: '/profile',
+            element: <PrivateRoute><Profile/></PrivateRoute> ,
          },
          {
             path: '/about',

@@ -42,6 +42,13 @@ const Nav = () => {
             <NavLink to={"/about"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl" : "font-bold md:text-xl")}>
                about
             </NavLink>
+
+            {user && (
+               <NavLink to={"/profile"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl" : "font-bold md:text-xl")}>
+                  Profile
+               </NavLink>
+            )}
+
             <div>
                {user?.email ? (
                   <NavLink onClick={handleSignOut} to={"/logIn"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl" : "font-bold md:text-xl")}>

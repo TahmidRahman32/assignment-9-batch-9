@@ -5,6 +5,7 @@ import { FaEyeSlash } from "react-icons/fa6";
 import { IoEyeSharp } from "react-icons/io5";
 import { AuthContext } from "../Route/AuthProvider";
 import toast from "react-hot-toast";
+import { updateProfile } from "firebase/auth";
 
 const SignUp = () => {
    const [showPass, setShowPass] = useState(false);
@@ -36,6 +37,9 @@ const SignUp = () => {
          .then((result) => {
             console.log(result.user);
             setRegisterMassage('User create a successfully');
+            updateProfile(result.user, {
+               displayName:
+            });
          })
          .catch((error) => {
             setRegisterError(error.code)
