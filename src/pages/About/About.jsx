@@ -12,11 +12,11 @@ const About = () => {
    return (
       <div>
          <Helmet>
-            <title>Altair || about</title>
+            <title>Altair-about</title>
          </Helmet>
          <AboutBanner></AboutBanner>
 
-         <div className="my-16">
+         <div className="mt-16">
             <div className="text-center my-16">
                <h1 className="text-4xl font-fStyle font-bold">our real estate agent</h1>
             </div>

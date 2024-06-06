@@ -11,12 +11,12 @@ const Profile = () => {
    
 
    return (
-      <div className="relative">
+      <div className="relative mt-8">
          <Helmet>
-            <title>Altair || Profile</title>
+            <title>Altair-Profile</title>
          </Helmet>
-         <div className="h-full p-3 space-y-2 w-60 bg-gray-900 text-gray-100 rounded-t-lg">
-            <div className="flex items-center p-2 space-x-4">
+         <div className="h-full p-3  w-full space-y-2 md:w-60 bg-gray-900 text-gray-100 md:rounded-t-lg ">
+            <div className="md:flex items-center p-2 space-x-4">
                <img className="rounded-full h-20 w-20" src={user?.photoURL} />
                <div>
                   <h2 className="text-lg font-semibold">{user?.displayName}</h2>
@@ -95,7 +95,7 @@ const Profile = () => {
                </ul>
             </div>
          </div>
-         <div className=" h-[400px] w-[990px] sm:space-x-6 bg-gray-900 text-gray-100 absolute left-64 top-1 flex  px-16 py-5 rounded-xl justify-between">
+         <div className=" md:h-[435px] md:w-[1020px] sm:space-x-6 bg-gray-900 text-gray-100 md:absolute md:left-64 md:top-1 md:flex  px-16 py-5 rounded-xl justify-between my-8 md:my-0">
             <div>
                <div className="flex-shrink-0 w-full mb-6 h-44 sm:h-32 sm:w-32 sm:mb-0 text-center">
                   <img src={user?.photoURL} alt="" className="object-cover object-center w-full h-full rounded-full bg-gray-500" />

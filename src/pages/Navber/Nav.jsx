@@ -35,37 +35,37 @@ const Nav = () => {
 
    const navLinks = (
       <>
-         <div className=" flex  gap-4 lg:items-center">
-            <NavLink to={"/"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl  " : "font-bold md:text-xl")}>
+         <div className=" flex  lg:gap-4 md:gap-3 gap-2 lg:items-center">
+            <NavLink to={"/"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl font-fStyle " : "font-bold md:text-xl font-fStyle")}>
                Home
             </NavLink>
-            <NavLink to={"/about"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl" : "font-bold md:text-xl")}>
+            <NavLink to={"/about"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl font-fStyle" : "font-bold md:text-xl font-fStyle")}>
                about
             </NavLink>
 
             {user && (
-               <NavLink to={"/order"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl" : "font-bold md:text-xl")}>
+               <NavLink to={"/order"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl font-fStyle" : "font-bold md:text-xl font-fStyle")}>
                   OrderList
                </NavLink>
             )}
             {user && (
-               <NavLink to={"/profile"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl" : "font-bold md:text-xl")}>
+               <NavLink to={"/profile"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl font-fStyle" : "font-bold md:text-xl font-fStyle")}>
                   Profile
                </NavLink>
             )}
 
             <div>
                {user?.email ? (
-                  <NavLink onClick={handleSignOut} to={"/logIn"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl" : "font-bold md:text-xl")}>
+                  <NavLink onClick={handleSignOut} to={"/logIn"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl font-fStyle" : "font-bold md:text-xl font-fStyle")}>
                      LogUot
                   </NavLink>
                ) : (
-                  <NavLink to={"/logIn"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl" : "font-bold md:text-xl")}>
+                  <NavLink to={"/logIn"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl font-fStyle" : "font-bold md:text-xl font-fStyle")}>
                      LogIn
                   </NavLink>
                )}
             </div>
-            <NavLink to={"/signUp"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl" : "font-bold md:text-xl")}>
+            <NavLink to={"/signUp"} className={({ isActive }) => (isActive ? "text-primary underline font-bold md:text-xl font-fStyle" : "font-bold md:text-xl font-fStyle")}>
                SignUp
             </NavLink>
          </div>

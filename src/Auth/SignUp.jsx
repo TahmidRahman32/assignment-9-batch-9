@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaEyeSlash } from "react-icons/fa6";
 import { IoEyeSharp } from "react-icons/io5";
 import { AuthContext } from "../Route/AuthProvider";
@@ -12,6 +12,7 @@ const SignUp = () => {
    const [registerError, setRegisterError] = useState('');
    const [registerMassage, setRegisterMassage] = useState('');
    const { createUsers } = useContext(AuthContext);
+   const navigate = useNavigate();
    const handleRegisterPage = (e) => {
       e.preventDefault();
       const form = e.target;
@@ -42,17 +43,18 @@ const SignUp = () => {
                photoURL: photo,
             })
             .then(()=>{console.log('name is done');}).catch(()=>{})
+            navigate('/')
          })
          .catch((error) => {
             setRegisterError(error.code)
          });
    };
    return (
-      <div className="bg-slate-300 p-10 rounded-t-xl">
+      <div className="bg-slate-300 md:p-10 rounded-t-xl">
          <Helmet>
             <title>Altair | SignUp</title>
          </Helmet>
-         <div className="w-full max-w-xl mx-auto my-20 px-12 py-12 items-center space-y-3 rounded-xl dark:text-gray-800 bg-gray-200 shadow-lg">
+         <div className="w-full max-w-xl mx-auto my-20 md:px-12 px-3 py-12 items-center space-y-3 rounded-xl dark:text-gray-800 bg-gray-200 shadow-lg">
             <h1 className="text-3xl font-bold font-fStyle text-center">Register Now!!</h1>
             <form noValidate="" action="" className="space-y-6" onSubmit={handleRegisterPage}>
                <div className="space-y-1 text-sm">
@@ -69,7 +71,7 @@ const SignUp = () => {
                </div>
                <div className="space-y-1 text-sm">
                   <label htmlFor="url" className="block dark:text-gray-600">
-                     Photo Url
+                     Photo url
                   </label>
                   <input
                      type="url"

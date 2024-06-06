@@ -1,27 +1,33 @@
 import { Link, useRouteError } from "react-router-dom";
-import errorImg from '../../assets/404.gif'
+
 import { FaArrowLeft } from "react-icons/fa6";
 
 const ErrorPage = () => {
    const error = useRouteError();
+   console.log(error);
   
    return (
-      <div className="flex justify-center">
-         <div>
-            <img src={errorImg} alt="" />
-
-            <h3 className="font-bold text-2xl text-center text-red-500">{error.data}</h3>
-            <div className="text-center my-5">
-               <Link to={"/"} className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-red-500 rounded-xl group">
-                  <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-red-700 rounded group-hover:-mr-4 group-hover:-mt-4">
-                     <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
-                  </span>
-                  <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-red-600 rounded-2xl group-hover:mb-12 group-hover:translate-x-0"></span>
-                  <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white flex items-center gap-1"> <FaArrowLeft /> Go Home</span>
-               </Link>
-            </div>
+      <section className="flex items-center  min-h-[calc(100vh-0px)] sm:p-16 ">
+         <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8 space-y-8 text-center sm:max-w-md">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-40 h-40 text-gray-600">
+               <path fill="currentColor" d="M256,16C123.452,16,16,123.452,16,256S123.452,496,256,496,496,388.548,496,256,388.548,16,256,16ZM403.078,403.078a207.253,207.253,0,1,1,44.589-66.125A207.332,207.332,0,0,1,403.078,403.078Z"></path>
+               <rect width="176" height="32" x="168" y="320" fill="currentColor"></rect>
+               <polygon
+                  fill="currentColor"
+                  points="210.63 228.042 186.588 206.671 207.958 182.63 184.042 161.37 162.671 185.412 138.63 164.042 117.37 187.958 141.412 209.329 120.042 233.37 143.958 254.63 165.329 230.588 189.37 251.958 210.63 228.042"
+               ></polygon>
+               <polygon
+                  fill="currentColor"
+                  points="383.958 182.63 360.042 161.37 338.671 185.412 314.63 164.042 293.37 187.958 317.412 209.329 296.042 233.37 319.958 254.63 341.329 230.588 365.37 251.958 386.63 228.042 362.588 206.671 383.958 182.63"
+               ></polygon>
+            </svg>
+            <p className="text-6xl text-red-500">{error.status}</p>
+            <p className="text-xl">{error.data}</p>
+            <Link to={'/'}  className="flex items-center gap-2 px-8 py-3 font-semibold rounded bg-red-300 text-gray-900">
+               <FaArrowLeft size={25}/> Back to homepage
+            </Link>
          </div>
-      </div>
+      </section>
    );
 };
 

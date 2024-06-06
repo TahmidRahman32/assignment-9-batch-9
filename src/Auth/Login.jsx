@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useLocation } from "react-router-dom";
 import { FaEyeSlash } from "react-icons/fa6";
 import { IoEyeSharp } from "react-icons/io5";
 import { AuthContext } from "../Route/AuthProvider";
@@ -10,23 +10,23 @@ import { FaGithub } from "react-icons/fa6";
 const Login = () => {
    const [showPass, setShowPass] = useState(false);
    const [logError, setLogError] = useState("");
-   const [loginMassage, setLoginMassage] = useState('')
-   const { logIn, googleLogin,githubLogin } = useContext(AuthContext);
-  
-      
+   const [loginMassage, setLoginMassage] = useState("");
+   const { logIn, googleLogin, githubLogin } = useContext(AuthContext);
+   const location = useLocation();
+
    const handleLoginPage = (e) => {
       e.preventDefault();
       const form = e.target;
       const email = form.email.value;
       const password = form.password.value;
-      
 
       console.log(email, password);
 
       logIn(email, password)
          .then((result) => {
             console.log(result.user);
-            setLoginMassage('Login successfully')
+            setLoginMassage("Login successfully");
+            Navigate(location?.state ? location?.state : "/");
          })
          .catch((error) => {
             // console.log(error.massage);
@@ -34,28 +34,34 @@ const Login = () => {
          });
    };
 
-   const handleGoogleBtn =()=>{
+   const handleGoogleBtn = () => {
       googleLogin()
-      .then(result =>{
-         console.log(result.user);
-      })
-      .catch(error =>{
-         console.log(error);
-      })
-   }
+         .then((result) => {
+            console.log(result.user);
+            Navigate(location?.state ? location?.state : "/");
+            console.log(location.state);
+         })
+         .catch((error) => {
+            console.log(error);
+         });
+   };
 
-   const handleGithubBtn = ()=>{
+   const handleGithubBtn = () => {
       githubLogin()
-      .then(result =>{console.log(result.user)})
-      .catch(error =>{console.log(error)})
-   }
+         .then((result) => {
+            console.log(result.user);
+         })
+         .catch((error) => {
+            console.log(error);
+         });
+   };
 
    return (
-      <div className="bg-slate-300 p-10 rounded-t-xl">
+      <div className="bg-slate-300 md:p-10 rounded-t-xl">
          <Helmet>
-            <title>Altair | LogIn</title>
+            <title>Altair-LogIn</title>
          </Helmet>
-         <div className="w-full max-w-xl mx-auto my-20 px-12 py-12 items-center space-y-3 rounded-xl dark:text-gray-800 bg-gray-200 shadow-lg">
+         <div className="w-full max-w-xl mx-auto my-20 md:px-12 px-2 md:py-12 py-4 items-center space-y-3 rounded-xl dark:text-gray-800 bg-gray-200 shadow-lg">
             <h1 className="text-3xl font-bold font-fStyle text-center">Login Now!!</h1>
             <form noValidate="" action="" className="space-y-6" onSubmit={handleLoginPage}>
                <div className="space-y-1 text-sm">
